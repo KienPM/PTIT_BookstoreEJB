@@ -1,0 +1,39 @@
+<md-card layout="row" class="md-padding" ng-controller="viewBookCtrl">
+    <div layout="column">
+        <img src="/imageBook/{{book.image}}" style="width: 230px; height:350px">
+    </div>
+
+    <div layout="column" style="margin-left: 23px">
+        <table>
+            <tr>
+                <td colspan="2"><h3>{{book.title}}</h3></td>
+            </tr>
+            <tr>
+                <td style="width: 80px"><b>Tác giả:</b></td>
+                <td>{{book.author.name}}</td>
+            </tr>
+            <tr>
+                <td><b>Thể loại:</b></td>
+                <td>{{book.category.description}}</td>
+            </tr>
+            <tr>
+                <td><b>Bộ sách:</b></td>
+                <td>{{book.bookSet.description}}</td>
+            </tr>
+            <tr>
+                <td><b>Mô tả:</b></td>
+                <td>{{book.description}}</td>
+            </tr>
+            <tr>
+                <td><b>Giá:</b></td>
+                <td class="text-color-red">{{book.salePrice}} đồng</td>
+            </tr>
+        </table>
+
+        <div>
+            <md-button class="md-raised md-primary text-color-white" ng-click="addToCart()">
+                <md-icon md-svg-src="/icons/ic_add_shopping_cart_white_24px.svg"></md-icon>
+                Thêm vào giỏ hàng
+        </div>
+    </div>
+</md-card>

@@ -1,0 +1,70 @@
+#menu {
+    background-color: #e7e7e7;
+    padding: 0px;
+}
+
+#menu ul {
+    list-style: none;
+    margin-left: -20px;
+}
+
+#menu li {
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#menu li:hover {
+    background-color: #bfbfbf;
+}
+
+.search-box {
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.search-box input {
+    border: none;
+}
+
+.form-wrapper {
+    height: 10px;
+}
+
+.tile-footer {
+    background-color: #03a9f4;
+    padding: 5px;
+    color: white;
+}
+
+.background-grey {
+    background-color: #f2f2f2;
+}
+
+.background-white {
+    background-color: white;
+}
+
+.text-color-green {
+    color: green;
+    font-weight: bold;
+}
+
+.text-color-red {
+    color: red;
+    font-weight: bold;
+}
+
+.text-color-white {
+    color: white !important;
+    font-weight: bold;
+}
+
+md-grid-tile {
+    cursor: pointer !important;
+}
+
+.clickabble {
+    cursor: pointer;
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BookstoreEJB.iml" filepath="$PROJECT_DIR$/BookstoreEJB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EJBModule/EJBModule.iml" filepath="$PROJECT_DIR$/EJBModule/EJBModule.iml" />
+    </modules>
+  </component>
+</project>
