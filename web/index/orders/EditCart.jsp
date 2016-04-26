@@ -12,6 +12,7 @@
 <html>
 <head>
     <title>Giỏ hàng</title>
+    <link rel="icon" href="/icons/ic_book.png">
     <link rel="stylesheet" type="text/css" href="/bower_components/angular-material/angular-material.min.css">
     <link rel="stylesheet" type="text/css" href="/index/orders/Cart.css">
 </head>
@@ -67,10 +68,10 @@
                     <th>Tổng tiền</th>
                     <th></th>
                 </tr>
-                <tr ng-repeat="bo in cart.list track by $index">
+                <tr ng-repeat="bo in bookOrders track by $index">
                     <td>{{bo.book.title}}</td>
                     <td><img src="/imageBook/{{bo.book.image}}" width="35px" height="60px"/></td>
-                    <td>{{bo.book.author}}</td>
+                    <td>{{bo.book.author.name}}</td>
                     <td>{{bo.book.originalPrice}}</td>
                     <td>{{bo.book.salePrice}}</td>
                     <td><input type="number" min="1" ng-model="quantities[$index]"></td>

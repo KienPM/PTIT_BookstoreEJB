@@ -14,8 +14,8 @@ app.controller('editCartCtrl', function ($scope, $http, $mdDialog) {
     $scope.saleBookSetPrice = 0;
     $scope.quantities = [];
 
-    getCart();
-    function getCart() {
+    getBookOrders();
+    function getBookOrders() {
         var req = {
             method: 'POST',
             url: '/GetCart',
@@ -28,9 +28,9 @@ app.controller('editCartCtrl', function ($scope, $http, $mdDialog) {
             $scope.result = response.data;
             if ($scope.result[0] === "success") {
                 $scope.isShowError = false;
-                $scope.cart = $scope.result[1];
+                $scope.bookOrders = $scope.result[1];
+                console.log($scope.bookOrders);
                 calculate();
-                console.log($scope.cart);
             } else {
                 $scope.errorMessage = $scope.result[1];
                 $scope.isShowError = true;
@@ -43,16 +43,15 @@ app.controller('editCartCtrl', function ($scope, $http, $mdDialog) {
     };
 
     function calculate() {
-        var list = $scope.cart.list;
         var numOfBookSet = 0;
         var s = '';
-        for (var i = 0; i < list.length; ++i) {
-            $scope.totalPrice += parseFloat(list[i].book.salePrice) * list[i].quantity;
-            $scope.quantities[i] = list[i].quantity;
-            if (s.indexOf(list[i].book.bookSet.description) != -1) {
+        for (var i = 0; i < $scope.bookOrders.length; ++i) {
+            $scope.totalPrice += parseFloat($scope.bookOrders[i].book.salePrice) * $scope.bookOrders[i].quantity;
+            $scope.quantities[i] = $scope.bookOrders[i].quantity;
+            if (s.indexOf($scope.bookOrders[i].book.bookSet.description) != -1) {
                 ++numOfBookSet;
             } else {
-                s += list[i].book.bookSet.description;
+                s += $scope.bookOrders[i].book.bookSet.description;
             }
         }
         $scope.saleBookSetPrice = $scope.totalPrice - numOfBookSet * 10000;

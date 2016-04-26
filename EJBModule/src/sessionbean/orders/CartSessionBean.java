@@ -7,6 +7,7 @@ import javax.persistence.PersistenceContext;
 
 import entity.orders.BookOrder;
 import entity.orders.Cart;
+import entity.orders.CartSaved;
 
 /**
  * Session Bean implementation class CartSessionBean
@@ -27,6 +28,11 @@ public class CartSessionBean implements CartSessionBeanRemote {
         Cart cart = new Cart();
         em.persist(cart);
         return cart.getId();
+    }
+
+    @Override
+    public void save(CartSaved cartSaved) {
+        em.persist(cartSaved);
     }
 
 }

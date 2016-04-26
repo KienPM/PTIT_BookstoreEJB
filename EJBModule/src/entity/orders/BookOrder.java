@@ -30,6 +30,12 @@ public class BookOrder implements Serializable {
         this.cart = cart;
     }
 
+    public BookOrder(int id, Book book, int quantity) {
+        this.id = id;
+        this.quantity = quantity;
+        this.book = book;
+    }
+
     public BookOrder(int id, Book book, int quantity, Cart cart) {
         this.id = id;
         this.quantity = quantity;
