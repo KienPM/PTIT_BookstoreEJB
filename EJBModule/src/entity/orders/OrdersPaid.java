@@ -9,4 +9,9 @@ public class OrdersPaid implements OrdersState {
 	public String toString() {
 		return "Đã thanh toán";
 	}
+
+	@Override
+	public int toInt() {
+		return 3;
+	}
 }

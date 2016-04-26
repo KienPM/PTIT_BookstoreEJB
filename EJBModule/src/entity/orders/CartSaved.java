@@ -8,7 +8,7 @@ import javax.persistence.*;
  * Created by Ken on 26/04/2016.
  */
 @Entity
-public class CartSaved {
+public class CartSaved extends Subject {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "idcart_saved")
@@ -19,6 +19,9 @@ public class CartSaved {
     @JoinColumn(name = "idperson", nullable = false)
     @OneToOne
     private CustomerMember customerMember;
+    @Column(name = "state")
+    @Convert(converter = CartSavedStateConverter.class)
+    private CartSavedState state;
 
     public CartSaved() {
     }

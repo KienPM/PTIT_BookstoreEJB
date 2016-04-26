@@ -6,4 +6,6 @@ public interface OrdersState {
 
     public String toString();
 
+    public int toInt();
+
 }

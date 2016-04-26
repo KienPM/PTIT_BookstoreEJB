@@ -9,4 +9,9 @@ public class OrdersWaitConfirm implements OrdersState {
 	public String toString() {
 		return "Đang chờ xác nhận";
 	}
+
+    @Override
+    public int toInt() {
+        return 1;
+    }
 }

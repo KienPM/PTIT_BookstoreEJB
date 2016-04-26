@@ -10,4 +10,9 @@ public class OrdersDelivered implements OrdersState {
 	public String toString() {
 		return "Đã phân phối";
 	}
+
+	@Override
+	public int toInt() {
+		return 2;
+	}
 }
