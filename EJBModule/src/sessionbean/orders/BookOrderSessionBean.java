@@ -27,4 +27,9 @@ public class BookOrderSessionBean implements BookOrderSessionBeanRemote {
 		return bookOrder.getId();
 	}
 
+	@Override
+	public void changeState(BookOrder bookOrder) {
+
+	}
+
 }

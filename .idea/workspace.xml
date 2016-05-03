@@ -2,40 +2,75 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="626d232c-5c86-4d7d-bf65-c2438c528959" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EJBModule/src/entity/orders/CartSavedNotOrdered.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EJBModule/src/entity/orders/CartSavedOrdered.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EJBModule/src/entity/orders/CartSavedState.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EJBModule/src/entity/orders/CartSavedStateConverter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EJBModule/src/entity/orders/Observer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EJBModule/src/entity/orders/OrdersStateConverter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EJBModule/src/entity/orders/Subject.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EJBModule/src/entity/orders/CartSavedObserver.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EJBModule/src/entity/orders/OrdersObserver.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EJBModule/src/sessionbean/bank/BankSessionBean.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EJBModule/src/sessionbean/bank/BankSessionBeanRemote.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EJBModule/src/sessionbean/bank/KCoinBankSessionBean.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EJBModule/src/sessionbean/bank/KcoinBankSessionBeanRemote.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EJBModule/src/sessionbean/orders/AddressShippingSessionBean.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EJBModule/src/sessionbean/orders/AddressShippingSessionBeanRemote.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EJBModule/src/sessionbean/orders/ShippingInforSessionBean.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EJBModule/src/sessionbean/orders/ShippingInforSessionBeanRemote.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EJBModule/src/sessionbean/person/AddressSessionBean.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EJBModule/src/sessionbean/person/AddressSessionBeanRemote.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EJBModule/src/sessionbean/person/FullNameSessionBean.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EJBModule/src/sessionbean/person/FullNameSessionBeanRemote.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/BookstoreEJB_war_exploded.war/WEB-INF/classes/entity/orders/CartSaved.class" afterPath="$PROJECT_DIR$/out/artifacts/BookstoreEJB_war_exploded.war/WEB-INF/classes/entity/orders/CartSaved.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/BookstoreEJB_war_exploded.war/WEB-INF/classes/entity/orders/Observer.class" afterPath="$PROJECT_DIR$/out/artifacts/BookstoreEJB_war_exploded.war/WEB-INF/classes/entity/orders/Observer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/BookstoreEJB_war_exploded.war/WEB-INF/classes/entity/orders/Orders.class" afterPath="$PROJECT_DIR$/out/artifacts/BookstoreEJB_war_exploded.war/WEB-INF/classes/entity/orders/Orders.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/BookstoreEJB_war_exploded.war/WEB-INF/classes/entity/orders/OrdersDelivered.class" afterPath="$PROJECT_DIR$/out/artifacts/BookstoreEJB_war_exploded.war/WEB-INF/classes/entity/orders/OrdersDelivered.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/BookstoreEJB_war_exploded.war/WEB-INF/classes/entity/orders/OrdersPaid.class" afterPath="$PROJECT_DIR$/out/artifacts/BookstoreEJB_war_exploded.war/WEB-INF/classes/entity/orders/OrdersPaid.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/BookstoreEJB_war_exploded.war/WEB-INF/classes/entity/orders/OrdersState.class" afterPath="$PROJECT_DIR$/out/artifacts/BookstoreEJB_war_exploded.war/WEB-INF/classes/entity/orders/OrdersState.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/BookstoreEJB_war_exploded.war/WEB-INF/classes/entity/orders/OrdersWaitConfirm.class" afterPath="$PROJECT_DIR$/out/artifacts/BookstoreEJB_war_exploded.war/WEB-INF/classes/entity/orders/OrdersWaitConfirm.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/BookstoreEJB_war_exploded.war/WEB-INF/classes/entity/orders/Subject.class" afterPath="$PROJECT_DIR$/out/artifacts/BookstoreEJB_war_exploded.war/WEB-INF/classes/entity/orders/Subject.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/BookstoreEJB_war_exploded.war/WEB-INF/classes/entity/person/CustomerMember.class" afterPath="$PROJECT_DIR$/out/artifacts/BookstoreEJB_war_exploded.war/WEB-INF/classes/entity/person/CustomerMember.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/BookstoreEJB_war_exploded.war/WEB-INF/classes/entity/person/VietnamesePersonBuilder.class" afterPath="$PROJECT_DIR$/out/artifacts/BookstoreEJB_war_exploded.war/WEB-INF/classes/entity/person/VietnamesePersonBuilder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/BookstoreEJB_war_exploded.war/WEB-INF/classes/servlet/orders/Order.class" afterPath="$PROJECT_DIR$/out/artifacts/BookstoreEJB_war_exploded.war/WEB-INF/classes/servlet/orders/Order.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/BookstoreEJB_war_exploded.war/WEB-INF/classes/servlet/orders/SetShippingInfo.class" afterPath="$PROJECT_DIR$/out/artifacts/BookstoreEJB_war_exploded.war/WEB-INF/classes/servlet/orders/SetShippingInfo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/BookstoreEJB_war_exploded.war/WEB-INF/classes/servlet/person/Register.class" afterPath="$PROJECT_DIR$/out/artifacts/BookstoreEJB_war_exploded.war/WEB-INF/classes/servlet/person/Register.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/BookstoreEJB_war_exploded.war/WEB-INF/classes/sessionbean/orders/BookOrderSessionBean.class" afterPath="$PROJECT_DIR$/out/artifacts/BookstoreEJB_war_exploded.war/WEB-INF/classes/sessionbean/orders/BookOrderSessionBean.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/BookstoreEJB_war_exploded.war/WEB-INF/classes/sessionbean/orders/BookOrderSessionBeanRemote.class" afterPath="$PROJECT_DIR$/out/artifacts/BookstoreEJB_war_exploded.war/WEB-INF/classes/sessionbean/orders/BookOrderSessionBeanRemote.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/BookstoreEJB_war_exploded.war/WEB-INF/classes/sessionbean/person/CustomerMemberSessionBean.class" afterPath="$PROJECT_DIR$/out/artifacts/BookstoreEJB_war_exploded.war/WEB-INF/classes/sessionbean/person/CustomerMemberSessionBean.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/BookstoreEJB_war_exploded.war/WEB-INF/classes/sessionbean/person/CustomerMemberSessionBeanRemote.class" afterPath="$PROJECT_DIR$/out/artifacts/BookstoreEJB_war_exploded.war/WEB-INF/classes/sessionbean/person/CustomerMemberSessionBeanRemote.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/EJBModule_ejb_exploded/entity/orders/CartSaved.class" afterPath="$PROJECT_DIR$/out/artifacts/EJBModule_ejb_exploded/entity/orders/CartSaved.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/EJBModule_ejb_exploded/entity/orders/Observer.class" afterPath="$PROJECT_DIR$/out/artifacts/EJBModule_ejb_exploded/entity/orders/Observer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/EJBModule_ejb_exploded/entity/orders/Orders.class" afterPath="$PROJECT_DIR$/out/artifacts/EJBModule_ejb_exploded/entity/orders/Orders.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/EJBModule_ejb_exploded/entity/orders/OrdersDelivered.class" afterPath="$PROJECT_DIR$/out/artifacts/EJBModule_ejb_exploded/entity/orders/OrdersDelivered.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/EJBModule_ejb_exploded/entity/orders/OrdersPaid.class" afterPath="$PROJECT_DIR$/out/artifacts/EJBModule_ejb_exploded/entity/orders/OrdersPaid.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/EJBModule_ejb_exploded/entity/orders/OrdersState.class" afterPath="$PROJECT_DIR$/out/artifacts/EJBModule_ejb_exploded/entity/orders/OrdersState.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/EJBModule_ejb_exploded/entity/orders/OrdersWaitConfirm.class" afterPath="$PROJECT_DIR$/out/artifacts/EJBModule_ejb_exploded/entity/orders/OrdersWaitConfirm.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/EJBModule_ejb_exploded/entity/orders/Subject.class" afterPath="$PROJECT_DIR$/out/artifacts/EJBModule_ejb_exploded/entity/orders/Subject.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/EJBModule_ejb_exploded/entity/person/CustomerMember.class" afterPath="$PROJECT_DIR$/out/artifacts/EJBModule_ejb_exploded/entity/person/CustomerMember.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/EJBModule_ejb_exploded/entity/person/VietnamesePersonBuilder.class" afterPath="$PROJECT_DIR$/out/artifacts/EJBModule_ejb_exploded/entity/person/VietnamesePersonBuilder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/EJBModule_ejb_exploded/sessionbean/orders/BookOrderSessionBean.class" afterPath="$PROJECT_DIR$/out/artifacts/EJBModule_ejb_exploded/sessionbean/orders/BookOrderSessionBean.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/EJBModule_ejb_exploded/sessionbean/orders/BookOrderSessionBeanRemote.class" afterPath="$PROJECT_DIR$/out/artifacts/EJBModule_ejb_exploded/sessionbean/orders/BookOrderSessionBeanRemote.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/EJBModule_ejb_exploded/sessionbean/person/CustomerMemberSessionBean.class" afterPath="$PROJECT_DIR$/out/artifacts/EJBModule_ejb_exploded/sessionbean/person/CustomerMemberSessionBean.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/EJBModule_ejb_exploded/sessionbean/person/CustomerMemberSessionBeanRemote.class" afterPath="$PROJECT_DIR$/out/artifacts/EJBModule_ejb_exploded/sessionbean/person/CustomerMemberSessionBeanRemote.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BookstoreEJB/servlet/orders/Order.class" afterPath="$PROJECT_DIR$/out/production/BookstoreEJB/servlet/orders/Order.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BookstoreEJB/servlet/orders/SetShippingInfo.class" afterPath="$PROJECT_DIR$/out/production/BookstoreEJB/servlet/orders/SetShippingInfo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BookstoreEJB/servlet/person/Register.class" afterPath="$PROJECT_DIR$/out/production/BookstoreEJB/servlet/person/Register.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/EJBModule/entity/orders/CartSaved.class" afterPath="$PROJECT_DIR$/out/production/EJBModule/entity/orders/CartSaved.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/EJBModule/entity/orders/Observer.class" afterPath="$PROJECT_DIR$/out/production/EJBModule/entity/orders/Observer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/EJBModule/entity/orders/Orders.class" afterPath="$PROJECT_DIR$/out/production/EJBModule/entity/orders/Orders.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/EJBModule/entity/orders/OrdersDelivered.class" afterPath="$PROJECT_DIR$/out/production/EJBModule/entity/orders/OrdersDelivered.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/EJBModule/entity/orders/OrdersPaid.class" afterPath="$PROJECT_DIR$/out/production/EJBModule/entity/orders/OrdersPaid.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/EJBModule/entity/orders/OrdersState.class" afterPath="$PROJECT_DIR$/out/production/EJBModule/entity/orders/OrdersState.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/EJBModule/entity/orders/OrdersWaitConfirm.class" afterPath="$PROJECT_DIR$/out/production/EJBModule/entity/orders/OrdersWaitConfirm.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/EJBModule/entity/orders/Subject.class" afterPath="$PROJECT_DIR$/out/production/EJBModule/entity/orders/Subject.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/EJBModule/entity/person/CustomerMember.class" afterPath="$PROJECT_DIR$/out/production/EJBModule/entity/person/CustomerMember.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/EJBModule/entity/person/VietnamesePersonBuilder.class" afterPath="$PROJECT_DIR$/out/production/EJBModule/entity/person/VietnamesePersonBuilder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/EJBModule/sessionbean/orders/BookOrderSessionBean.class" afterPath="$PROJECT_DIR$/out/production/EJBModule/sessionbean/orders/BookOrderSessionBean.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/EJBModule/sessionbean/orders/BookOrderSessionBeanRemote.class" afterPath="$PROJECT_DIR$/out/production/EJBModule/sessionbean/orders/BookOrderSessionBeanRemote.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/EJBModule/sessionbean/person/CustomerMemberSessionBean.class" afterPath="$PROJECT_DIR$/out/production/EJBModule/sessionbean/person/CustomerMemberSessionBean.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/EJBModule/sessionbean/person/CustomerMemberSessionBeanRemote.class" afterPath="$PROJECT_DIR$/out/production/EJBModule/sessionbean/person/CustomerMemberSessionBeanRemote.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EJBModule/src/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/EJBModule/src/META-INF/persistence.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EJBModule/src/entity/orders/CartSaved.java" afterPath="$PROJECT_DIR$/EJBModule/src/entity/orders/CartSaved.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EJBModule/src/entity/orders/Observer.java" afterPath="$PROJECT_DIR$/EJBModule/src/entity/orders/Observer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EJBModule/src/entity/orders/Orders.java" afterPath="$PROJECT_DIR$/EJBModule/src/entity/orders/Orders.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EJBModule/src/entity/orders/OrdersDelivered.java" afterPath="$PROJECT_DIR$/EJBModule/src/entity/orders/OrdersDelivered.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EJBModule/src/entity/orders/OrdersPaid.java" afterPath="$PROJECT_DIR$/EJBModule/src/entity/orders/OrdersPaid.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EJBModule/src/entity/orders/OrdersState.java" afterPath="$PROJECT_DIR$/EJBModule/src/entity/orders/OrdersState.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EJBModule/src/entity/orders/OrdersWaitConfirm.java" afterPath="$PROJECT_DIR$/EJBModule/src/entity/orders/OrdersWaitConfirm.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EJBModule/src/entity/orders/Subject.java" afterPath="$PROJECT_DIR$/EJBModule/src/entity/orders/Subject.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EJBModule/src/entity/person/CustomerMember.java" afterPath="$PROJECT_DIR$/EJBModule/src/entity/person/CustomerMember.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EJBModule/src/entity/person/VietnamesePersonBuilder.java" afterPath="$PROJECT_DIR$/EJBModule/src/entity/person/VietnamesePersonBuilder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EJBModule/src/sessionbean/orders/BookOrderSessionBean.java" afterPath="$PROJECT_DIR$/EJBModule/src/sessionbean/orders/BookOrderSessionBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EJBModule/src/sessionbean/orders/BookOrderSessionBeanRemote.java" afterPath="$PROJECT_DIR$/EJBModule/src/sessionbean/orders/BookOrderSessionBeanRemote.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EJBModule/src/sessionbean/person/CustomerMemberSessionBean.java" afterPath="$PROJECT_DIR$/EJBModule/src/sessionbean/person/CustomerMemberSessionBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EJBModule/src/sessionbean/person/CustomerMemberSessionBeanRemote.java" afterPath="$PROJECT_DIR$/EJBModule/src/sessionbean/person/CustomerMemberSessionBeanRemote.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/BookstoreEJB_war_exploded.war/index/home/Register.jsp" afterPath="$PROJECT_DIR$/out/artifacts/BookstoreEJB_war_exploded.war/index/home/Register.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlet/orders/Order.java" afterPath="$PROJECT_DIR$/src/servlet/orders/Order.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlet/orders/SetShippingInfo.java" afterPath="$PROJECT_DIR$/src/servlet/orders/SetShippingInfo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlet/person/Register.java" afterPath="$PROJECT_DIR$/src/servlet/person/Register.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index/home/Register.jsp" afterPath="$PROJECT_DIR$/web/index/home/Register.jsp" />
     </list>
     <ignored path="BookstoreEJB.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,50 +100,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Orders.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EJBModule/src/entity/orders/Orders.java">
+      <file leaf-file-name="persistence.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/EJBModule/src/META-INF/persistence.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="22" column="30" selection-start-line="20" selection-start-column="4" selection-end-line="22" selection-end-column="30" />
+            <state relative-caret-position="136">
+              <caret line="8" column="67" selection-start-line="8" selection-start-column="67" selection-end-line="8" selection-end-column="67" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CartSaved.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/EJBModule/src/entity/orders/CartSaved.java">
+      <file leaf-file-name="Cart.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EJBModule/src/entity/orders/Cart.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="136">
+              <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Observer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EJBModule/src/entity/orders/Observer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Subject.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EJBModule/src/entity/orders/Subject.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#211#212#0" expanded="true" />
-                <element signature="e#261#262#0" expanded="true" />
-                <element signature="e#306#307#0" expanded="true" />
-                <element signature="e#345#346#0" expanded="true" />
-                <element signature="e#390#391#0" expanded="true" />
-                <element signature="e#432#433#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -118,8 +125,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -134,27 +141,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/WEB-INF/jboss-deployment-structure.xml" />
-        <option value="$PROJECT_DIR$/EJBModule/src/entity/Test.java" />
-        <option value="$PROJECT_DIR$/EJBModule/src/sessionbean/orders/BookOrderSessionBean.java" />
-        <option value="$PROJECT_DIR$/EJBModule/src/sessionbean/book/CategorySessionBean.java" />
-        <option value="$PROJECT_DIR$/EJBModule/src/sessionbean/book/BookSessionBean.java" />
-        <option value="$PROJECT_DIR$/EJBModule/src/entity/person/OtherCountryPersonBuilder.java" />
-        <option value="$PROJECT_DIR$/EJBModule/src/entity/person/VietnamesePersonBuilder.java" />
-        <option value="$PROJECT_DIR$/src/servlet/orders/Order.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/servlet/orders/AddToCart.java" />
-        <option value="$PROJECT_DIR$/src/servlet/book/ViewBook.java" />
-        <option value="$PROJECT_DIR$/web/index/home/BookList.html" />
-        <option value="$PROJECT_DIR$/web/index/home/HomeCustomer.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jboss-web.xml" />
         <option value="$PROJECT_DIR$/web/index/orders/CartDialog.jsp" />
-        <option value="$PROJECT_DIR$/EJBModule/src/entity/orders/BookOrder.java" />
-        <option value="$PROJECT_DIR$/src/servlet/orders/GetCart.java" />
         <option value="$PROJECT_DIR$/web/index/orders/EditCart.jsp" />
-        <option value="$PROJECT_DIR$/web/index/orders/EditCartCtrl.js" />
         <option value="$PROJECT_DIR$/src/servlet/orders/UpdateCart.java" />
-        <option value="$PROJECT_DIR$/EJBModule/src/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/EJBModule/src/entity/orders/Cart.java" />
         <option value="$PROJECT_DIR$/EJBModule/src/sessionbean/orders/CartSessionBeanRemote.java" />
         <option value="$PROJECT_DIR$/EJBModule/src/sessionbean/orders/CartSessionBean.java" />
@@ -166,12 +156,42 @@
         <option value="$PROJECT_DIR$/EJBModule/src/entity/orders/OrdersStateConverter.java" />
         <option value="$PROJECT_DIR$/EJBModule/src/entity/orders/CartSavedState.java" />
         <option value="$PROJECT_DIR$/EJBModule/src/entity/orders/CartSavedOrdered.java" />
-        <option value="$PROJECT_DIR$/EJBModule/src/entity/orders/CartSavedNotOrdered.java" />
-        <option value="$PROJECT_DIR$/EJBModule/src/entity/orders/Subject.java" />
-        <option value="$PROJECT_DIR$/EJBModule/src/entity/orders/Observer.java" />
-        <option value="$PROJECT_DIR$/EJBModule/src/entity/orders/Orders.java" />
         <option value="$PROJECT_DIR$/EJBModule/src/entity/orders/CartSavedStateConverter.java" />
+        <option value="$PROJECT_DIR$/EJBModule/src/entity/orders/CartSavedNotOrdered.java" />
+        <option value="$PROJECT_DIR$/EJBModule/src/entity/orders/Observer.java" />
+        <option value="$PROJECT_DIR$/EJBModule/src/sessionbean/orders/BookOrderSessionBeanRemote.java" />
+        <option value="$PROJECT_DIR$/EJBModule/src/sessionbean/orders/BookOrderSessionBean.java" />
+        <option value="$PROJECT_DIR$/EJBModule/src/entity/orders/BookOrderObserver.java" />
+        <option value="$PROJECT_DIR$/EJBModule/src/entity/orders/BookOrder.java" />
+        <option value="$PROJECT_DIR$/EJBModule/src/entity/orders/Subject.java" />
+        <option value="$PROJECT_DIR$/EJBModule/src/entity/orders/Orders.java" />
         <option value="$PROJECT_DIR$/EJBModule/src/entity/orders/CartSaved.java" />
+        <option value="$PROJECT_DIR$/EJBModule/src/entity/orders/OrdersObserver.java" />
+        <option value="$PROJECT_DIR$/EJBModule/src/entity/orders/CartSavedObserver.java" />
+        <option value="$PROJECT_DIR$/src/servlet/orders/GetCart.java" />
+        <option value="$PROJECT_DIR$/web/index/orders/EditCartCtrl.js" />
+        <option value="$PROJECT_DIR$/EJBModule/src/sessionbean/bank/BankSessionBeanRemote.java" />
+        <option value="$PROJECT_DIR$/EJBModule/src/sessionbean/bank/BankSessionBean.java" />
+        <option value="$PROJECT_DIR$/EJBModule/src/sessionbean/bank/KcoinBankSessionBeanRemote.java" />
+        <option value="$PROJECT_DIR$/EJBModule/src/sessionbean/bank/KCoinBankSessionBean.java" />
+        <option value="$PROJECT_DIR$/EJBModule/src/sessionbean/person/FullNameSessionBean.java" />
+        <option value="$PROJECT_DIR$/EJBModule/src/sessionbean/person/AddressSessionBean.java" />
+        <option value="$PROJECT_DIR$/EJBModule/src/sessionbean/person/CustomerMemberSessionBeanRemote.java" />
+        <option value="$PROJECT_DIR$/src/servlet/orders/Order.java" />
+        <option value="$PROJECT_DIR$/EJBModule/src/sessionbean/person/AddressSessionBeanRemote.java" />
+        <option value="$PROJECT_DIR$/EJBModule/src/sessionbean/person/FullNameSessionBeanRemote.java" />
+        <option value="$PROJECT_DIR$/EJBModule/src/sessionbean/orders/AddressShippingSessionBeanRemote.java" />
+        <option value="$PROJECT_DIR$/EJBModule/src/sessionbean/orders/AddressShippingSessionBean.java" />
+        <option value="$PROJECT_DIR$/EJBModule/src/sessionbean/orders/ShippingInforSessionBeanRemote.java" />
+        <option value="$PROJECT_DIR$/EJBModule/src/sessionbean/orders/ShippingInforSessionBean.java" />
+        <option value="$PROJECT_DIR$/EJBModule/src/sessionbean/person/CustomerMemberSessionBean.java" />
+        <option value="$PROJECT_DIR$/web/index/home/Register.jsp" />
+        <option value="$PROJECT_DIR$/EJBModule/src/entity/person/VietnamesePersonBuilder.java" />
+        <option value="$PROJECT_DIR$/EJBModule/src/entity/bank/KcoinBank.java" />
+        <option value="$PROJECT_DIR$/src/servlet/orders/SetShippingInfo.java" />
+        <option value="$PROJECT_DIR$/src/servlet/person/Register.java" />
+        <option value="$PROJECT_DIR$/EJBModule/src/entity/person/CustomerMember.java" />
+        <option value="$PROJECT_DIR$/EJBModule/src/META-INF/persistence.xml" />
       </list>
     </option>
   </component>
@@ -213,7 +233,7 @@
         </expanded-state>
         <selected-state>
           <State>
-            <id>EjbRemoteRequirementsInspection</id>
+            <id>JpaAttributeTypeInspection</id>
           </State>
         </selected-state>
       </profile-state>
@@ -244,6 +264,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -370,7 +391,121 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="servlet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="person" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookstoreEJB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookstoreEJB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="servlet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="orders" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookstoreEJB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookstoreEJB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="servlet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookstoreEJB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookstoreEJB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="EJBModule" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookstoreEJB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookstoreEJB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EJBModule" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sessionbean" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="person" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookstoreEJB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookstoreEJB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EJBModule" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sessionbean" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="orders" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -439,6 +574,10 @@
               <option name="myItemId" value="entity" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="person" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -466,11 +605,58 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookstoreEJB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookstoreEJB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EJBModule" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="entity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookstoreEJB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookstoreEJB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EJBModule" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="entity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -487,15 +673,15 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\KTTKPM\BookstoreEJB\src" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="G:\KTTKPM\BookstoreEJB\web\imageBook" />
       <recent name="G:\KTTKPM\BookstoreEJB\web\icons" />
       <recent name="G:\KTTKPM\BookstoreEJB\web\WEB-INF\lib" />
       <recent name="G:\KTTKPM\BookstoreEJB\libs" />
       <recent name="G:\KTTKPM\BookstoreEJB" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="G:\KTTKPM\BookstoreEJB\src" />
     </key>
   </component>
   <component name="RunManager" selected="JBoss Server.JBoss 10.0.10.Final">
@@ -1019,12 +1205,16 @@
       <workItem from="1461654771255" duration="3584000" />
       <workItem from="1461658398621" duration="3664000" />
       <workItem from="1461663440703" duration="95000" />
-      <workItem from="1461684552106" duration="2862000" />
+      <workItem from="1461684552106" duration="4374000" />
+      <workItem from="1461717900883" duration="2381000" />
+      <workItem from="1462001910913" duration="3737000" />
+      <workItem from="1462266473230" duration="3868000" />
+      <workItem from="1462281430282" duration="2220000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24496000" />
+    <option name="totallyTimeSpent" value="38214000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1032,27 +1222,27 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43247864" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24222586" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.33060557" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="0" y="259" width="1366" height="209" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2549168" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22163388" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="EJB" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2569558" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.33060557" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" x="0" y="259" width="1366" height="209" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2549168" sideWeight="0.4844517" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22163388" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="EJB" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2549168" sideWeight="0.5155483" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1084,227 +1274,169 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/EJBModule/src/entity/Test.java" />
-    <entry file="file://$PROJECT_DIR$/EJBModule/src/entity/bank/Bank.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EJBModule/src/sessionbean/book/BookSessionBeanRemote.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EJBModule/src/sessionbean/book/CategorySessionBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EJBModule/src/sessionbean/book/BookSessionBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EJBModule/src/entity/person/OtherCountryPersonBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-42">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EJBModule/src/entity/person/PersonBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-182">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EJBModule/src/entity/person/VietnamesePersonBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index/book/ViewBook.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/bank/AddBank.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/orders/SetAddressShipping.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EJBModule/src/sessionbean/orders/BookOrderSessionBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/orders/AddToCart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="47" column="35" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/book/ViewBook.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index/home/BookList.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="76" selection-start-line="22" selection-start-column="76" selection-end-line="22" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jboss-deployment-structure.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index/home/HomeCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index/home/HomeCustomer.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jboss-web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index/orders/CartDialog.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="51" column="50" selection-start-line="51" selection-start-column="50" selection-end-line="51" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/orders/GetCart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="41" column="48" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index/orders/EditCart.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="73" column="45" selection-start-line="73" selection-start-column="45" selection-end-line="73" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index/orders/EditCartCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="47" column="52" selection-start-line="47" selection-start-column="52" selection-end-line="47" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/orders/UpdateCart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EJBModule/src/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="65" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EJBModule/src/entity/person/Customer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EJBModule/src/entity/person/Person.java">
+    <entry file="file://$PROJECT_DIR$/EJBModule/src/entity/book/Author.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EJBModule/src/entity/orders/Cart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EJBModule/src/entity/orders/BookOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EJBModule/src/entity/person/CustomerMember.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/EJBModule/src/sessionbean/orders/CartSessionBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+        <state relative-caret-position="357">
+          <caret line="28" column="18" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EJBModule/src/entity/orders/Observer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EJBModule/src/entity/orders/BookOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EJBModule/src/entity/orders/Subject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EJBModule/src/entity/orders/Orders.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EJBModule/src/entity/orders/CartSaved.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EJBModule/src/entity/orders/CartSavedOrdered.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EJBModule/src/entity/orders/OrdersObserver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EJBModule/src/entity/orders/CartSavedObserver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index/orders/EditCartCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="30" column="36" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/orders/GetCart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="33" column="13" selection-start-line="30" selection-start-column="12" selection-end-line="33" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/orders/SaveCart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="39" column="71" selection-start-line="39" selection-start-column="71" selection-end-line="39" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EJBModule/src/sessionbean/bank/BankSessionBeanBean.java" />
+    <entry file="file://$PROJECT_DIR$/EJBModule/src/sessionbean/book/BookSessionBeanRemote.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EJBModule/src/sessionbean/bank/BankSessionBeanRemote.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EJBModule/src/sessionbean/book/BookSessionBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="18" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EJBModule/src/sessionbean/bank/BankSessionBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EJBModule/src/sessionbean/bank/KcoinBankSessionBeanRemote.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EJBModule/src/sessionbean/bank/KCoinBankSessionBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EJBModule/src/sessionbean/person/FullNameSessionBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="14" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/orders/SetAddressShipping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EJBModule/src/sessionbean/orders/BookOrderSessionBeanRemote.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -1315,127 +1447,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/orders/SaveCart.java">
+    <entry file="file://$PROJECT_DIR$/EJBModule/src/sessionbean/person/AddressSessionBeanRemote.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="39" column="71" selection-start-line="39" selection-start-column="71" selection-end-line="39" selection-end-column="71" />
+        <state relative-caret-position="153">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/person/Logout.java">
+    <entry file="file://$PROJECT_DIR$/EJBModule/src/sessionbean/person/CustomerMemberSessionBeanRemote.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="51">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/person/Register.java">
+    <entry file="file://$PROJECT_DIR$/EJBModule/src/sessionbean/person/FullNameSessionBeanRemote.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-170">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/orders/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="40" column="64" selection-start-line="22" selection-start-column="9" selection-end-line="40" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EJBModule/src/entity/orders/OrdersDelivered.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EJBModule/src/entity/orders/OrdersPaid.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EJBModule/src/entity/orders/OrdersWaitConfirm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EJBModule/src/entity/orders/OrdersStateConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EJBModule/src/entity/orders/OrdersState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EJBModule/src/entity/orders/CartSavedState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EJBModule/src/entity/orders/CartSavedOrdered.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-          <folding>
-            <element signature="e#211#212#0" expanded="true" />
-            <element signature="e#235#236#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EJBModule/src/entity/orders/CartSavedNotOrdered.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-          <folding>
-            <element signature="e#214#215#0" expanded="true" />
-            <element signature="e#238#239#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EJBModule/src/entity/orders/Subject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="153">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#211#212#0" expanded="true" />
-            <element signature="e#261#262#0" expanded="true" />
-            <element signature="e#306#307#0" expanded="true" />
-            <element signature="e#345#346#0" expanded="true" />
-            <element signature="e#390#391#0" expanded="true" />
-            <element signature="e#432#433#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EJBModule/src/entity/orders/Observer.java">
+    <entry file="file://$PROJECT_DIR$/EJBModule/src/sessionbean/orders/AddressShippingSessionBeanRemote.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-          <folding />
+        <state relative-caret-position="187">
+          <caret line="11" column="53" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/946c931c-f80f-4035-8f5c-a2d6731b67be/console.sql">
+    <entry file="file://$PROJECT_DIR$/EJBModule/src/sessionbean/person/AddressSessionBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="14" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EJBModule/src/sessionbean/orders/AddressShippingSessionBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EJBModule/src/sessionbean/orders/BookOrderSessionBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="15" column="29" selection-start-line="14" selection-start-column="4" selection-end-line="15" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EJBModule/src/sessionbean/orders/ShippingInforSessionBeanRemote.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EJBModule/src/sessionbean/orders/ShippingInforSessionBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index/home/RegisterCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jboss-deployment-structure.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1443,29 +1528,135 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EJBModule/src/entity/orders/CartSavedStateConverter.java">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jboss-web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
-          <folding>
-            <element signature="e#293#294#0" expanded="true" />
-            <element signature="e#338#339#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EJBModule/src/entity/orders/Orders.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" column="30" selection-start-line="20" selection-start-column="4" selection-end-line="22" selection-end-column="30" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EJBModule/src/entity/orders/CartSaved.java">
+    <entry file="file://$PROJECT_DIR$/web/index/orders/EditCart.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="238">
+          <caret line="14" column="47" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EJBModule/src/entity/person/VietnamesePersonBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index/home/Register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-73">
+          <caret line="10" column="51" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/orders/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index/orders/ShippingInfor.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-663">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/orders/SetShippingInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/person/Register.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1">
+          <caret line="46" column="61" selection-start-line="46" selection-start-column="61" selection-end-line="46" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EJBModule/src/entity/person/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" column="53" selection-start-line="13" selection-start-column="4" selection-end-line="14" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EJBModule/src/entity/bank/Bank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EJBModule/src/entity/bank/KcoinBank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="e#233#234#0" expanded="true" />
+            <element signature="e#269#270#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EJBModule/src/entity/person/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EJBModule/src/sessionbean/person/CustomerMemberSessionBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EJBModule/src/entity/person/CustomerMember.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+          <folding>
+            <element signature="e#1151#1152#0" expanded="true" />
+            <element signature="e#1174#1175#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EJBModule/src/entity/orders/Cart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EJBModule/src/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="67" selection-start-line="8" selection-start-column="67" selection-end-line="8" selection-end-column="67" />
           <folding />
         </state>
       </provider>

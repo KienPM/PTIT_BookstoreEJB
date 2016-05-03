@@ -25,6 +25,11 @@ public class Orders extends Subject {
     public Orders() {
     }
 
+    @Override
+    public int getSubjectState() {
+        return state.toInt();
+    }
+
     public Orders(int id, ShippingInfor shipping, Payment payment, Date date) {
         this.id = id;
         this.shipping = shipping;

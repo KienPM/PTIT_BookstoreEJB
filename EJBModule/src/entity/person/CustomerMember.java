@@ -12,7 +12,8 @@ public class CustomerMember extends Customer implements Serializable {
 	private String username;
 	@Column(name = "password")
 	private String password;
-	@Column(name = "kcoinBank")
+	@OneToOne
+	@JoinColumn(name = "idbank", nullable = false)
 	private KcoinBank kcoinBank;
 
 	public CustomerMember() {

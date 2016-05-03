@@ -13,6 +13,8 @@ public abstract class Subject {
         this.observers = new ArrayList<>();
     }
 
+    public abstract int getSubjectState();
+
     public void attach(Observer observer) {
         observers.add(observer);
     }

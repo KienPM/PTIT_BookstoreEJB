@@ -20,25 +20,25 @@ import java.util.List;
 @WebServlet(name = "Order", urlPatterns = "/Order")
 public class Order extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//        Object[] result = new Object[2];
-//        HttpSession session = request.getSession();
-//        if (session.getAttribute("cart") != null) {
-//            Cart cart = (Cart) session.getAttribute("cart");
-//            List<BookOrder> list = cart.getList();
-//            String[] quantities = request.getParameterValues("quantities");
-//            if (quantities != null) {
-//                for (int i = 0; i < quantities.length; ++i) {
-//                    list.get(i).setQuantity(Integer.parseInt(quantities[i]));
-//                }
-//            }
-//            result[0] = "success";
-//        } else {
-//            result[0] = "fail";
-//            result[1] = "Có lỗi xảy ra, vui lòng thử lại sau";
-//        }
-//        response.setContentType("application/json");
-//        response.setCharacterEncoding("UTF-8");
-//        response.getWriter().write(new Gson().toJson(result));
+        Object[] result = new Object[2];
+        HttpSession session = request.getSession();
+        if (session.getAttribute("cart") != null) {
+            Cart cart = (Cart) session.getAttribute("cart");
+            List<BookOrder> list = cart.getList();
+            String[] quantities = request.getParameterValues("quantities");
+            if (quantities != null) {
+                for (int i = 0; i < quantities.length; ++i) {
+                    list.get(i).setQuantity(Integer.parseInt(quantities[i]));
+                }
+            }
+            result[0] = "success";
+        } else {
+            result[0] = "fail";
+            result[1] = "Có lỗi xảy ra, vui lòng thử lại sau";
+        }
+        response.setContentType("application/json");
+        response.setCharacterEncoding("UTF-8");
+        response.getWriter().write(new Gson().toJson(result));
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

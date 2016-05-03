@@ -12,30 +12,39 @@ import entity.person.CustomerMember;
  */
 @Stateless
 public class CustomerMemberSessionBean implements CustomerMemberSessionBeanRemote {
-	@PersistenceContext(unitName = "BookstoreEJB")
-	private EntityManager em;
+    @PersistenceContext(unitName = "BookstoreEJB")
+    private EntityManager em;
 
-	/**
-	 * Default constructor.
-	 */
-	public CustomerMemberSessionBean() {
-		// TODO Auto-generated constructor stub
-	}
+    /**
+     * Default constructor.
+     */
+    public CustomerMemberSessionBean() {
+        // TODO Auto-generated constructor stub
+    }
 
-	@Override
-	public CustomerMember checkLogin(String username, String password) {
-		String hql = "FROM CustomerMember c WHERE c.username = :username";
-		try {
-			CustomerMember c = (CustomerMember) em.createQuery(hql).setParameter("username", username)
-					.getSingleResult();
-			if (c.getPassword().equals(password)) {
-				return c;
-			} else {
-				return null;
-			}
-		} catch (Exception e) {
-			return null;
-		}
-	}
+    @Override
+    public int save(CustomerMember customerMember) {
+        em.persist(customerMember.getKcoinBank());
+        em.persist(customerMember.getFullName());
+        em.persist(customerMember.getAddress());
+        em.persist(customerMember);
+        return 0;
+    }
+
+    @Override
+    public CustomerMember checkLogin(String username, String password) {
+        String hql = "FROM CustomerMember c WHERE c.username = :username";
+        try {
+            CustomerMember c = (CustomerMember) em.createQuery(hql).setParameter("username", username)
+                    .getSingleResult();
+            if (c.getPassword().equals(password)) {
+                return c;
+            } else {
+                return null;
+            }
+        } catch (Exception e) {
+            return null;
+        }
+    }
 
 }

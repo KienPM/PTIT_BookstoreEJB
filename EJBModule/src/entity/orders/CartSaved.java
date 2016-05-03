@@ -26,6 +26,11 @@ public class CartSaved extends Subject {
     public CartSaved() {
     }
 
+    @Override
+    public int getSubjectState() {
+        return state.toInt();
+    }
+
     public CartSaved(Cart cart, CustomerMember customerMember) {
         this.cart = cart;
         this.customerMember = customerMember;
